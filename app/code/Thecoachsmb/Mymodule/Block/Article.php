@@ -2,28 +2,39 @@
 namespace Thecoachsmb\Mymodule\Block;
 
 use \Magento\Framework\View\Element\Template;
+use Magento\Framework\View\Element\Template\Context;
+use Magento\Store\Model\StoreManagerInterface;
+
+
 
 class Article extends Template
 {
-    /**
-     * Constructor
-     *
-     * @param Context $context
-     * @param array $data
-    */
-    public function __construct(
-        \Magento\Backend\Block\Template\Context $context,
-        array $data = []
-    ){
-        parent::__construct($context, $data);
-     }
+    protected $_storeManager;
 
-    /**
-     * @return Post[]
-    */
-    public function getArticles()
+    public function __construct(
+        Template\Context $context,
+        \Magento\Store\Model\StoreManagerInterface $storeManager,
+        array $data = []
+    ) {
+        parent::__construct($context, $data);
+        $this->_storeManager = $storeManager;
+    }
+
+    public function getStoreInformation()
     {
-        return 'getArticles function of the Block class called successfully';
+        $stores = $this->_storeManager->getStores();
+
+        $storeData = [];
+        foreach ($stores as $store) {
+            $storeData[] = [
+                'Store ID' => $store->getId(),
+                'Store Name' => $store->getName(),
+                'Store Code' => $store->getCode(),
+                'Store URL' => $store->getBaseUrl(),
+            ];
+        }
+
+        return $storeData;
     }
 }
 ?>

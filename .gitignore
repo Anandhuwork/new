@@ -1,3 +1,4 @@
+.vscode
 bin
 dev
 generated
@@ -7,3 +8,9 @@ pub
 setup
 var
 vendor
+.editorconfig
+.gitignore
+.htaccess
+.htaccess.sample
+.php-cs-fixer.dist.php
+.user.ini
