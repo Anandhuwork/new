@@ -348,7 +348,6 @@ return [
         'Magento_WishlistSampleData' => 1,
         'PayPal_Braintree' => 1,
         'PayPal_BraintreeGraphQl' => 1,
-        'Temando_ShippingRemover' => 1,
-        'Thecoachsmb_Mymodule' => 1
+        'Temando_ShippingRemover' => 1
     ]
 ];

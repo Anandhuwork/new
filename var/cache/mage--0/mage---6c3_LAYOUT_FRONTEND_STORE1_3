@@ -1,4 +1,4 @@
-a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1694624506;s:6:"expire";i:1726160506;s:4:"tags";s:37:"6c3_LAYOUT_GENERAL_CACHE_TAG,6c3_MAGE";}
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1694940984;s:6:"expire";i:1726476984;s:4:"tags";s:37:"6c3_LAYOUT_GENERAL_CACHE_TAG,6c3_MAGE";}
 <?xml version="1.0"?>
 <layouts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><handle id="catalog_category_view"><body/>
 </handle><handle id="catalogsearch_advanced_index"><body/>
@@ -7104,24 +7104,6 @@ a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1694624506;s:6:"expire";i:1726160506;s:4:"t
       <referenceBlock name="vault.token.list">
          <block class="PayPal\Braintree\Block\Customer\PayPal\VaultTokenRenderer" name="braintree_paypal.token.renderer" template="PayPal_Braintree::paypal/vault_token.phtml"/>
       </referenceBlock>
-   </referenceContainer>
-</body>
-</handle><handle id="default"><body>
-   <referenceBlock name="footer_links">
-      <block class="Magento\Framework\View\Element\Html\Link\Current" ifconfig="thecoachsmb/general/enable" name="mymodule-link">
-         <arguments>
-            <argument name="label" translate="true" xsi:type="string">My Module</argument>
-            <argument name="path" xsi:type="string">mymodule</argument>
-         </arguments>
-      </block>
-   </referenceBlock>
-</body>
-</handle><handle id="mymodule_index_index" layout="2columns-left"><head>
-   <title>Thecoachsmb - MyModule</title>
-</head>
-<body>
-   <referenceContainer name="content">
-      <block class="Thecoachsmb\Mymodule\Block\Article" name="articleData" template="Thecoachsmb_Mymodule::view.phtml"/>
    </referenceContainer>
 </body>
 </handle><handle id="default"><body>

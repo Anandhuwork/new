@@ -1,16 +1,16 @@
-.vscode
-bin
-dev
-generated
-lib
-phpserver
-pub
-setup
-var
-vendor
-.editorconfig
-.gitignore
-.htaccess
-.htaccess.sample
-.php-cs-fixer.dist.php
-.user.ini
+# .vscode
+# bin
+# dev
+# generated
+# lib
+# phpserver
+# pub
+# setup
+# var
+# vendor
+# .editorconfig
+# .gitignore
+# .htaccess
+# .htaccess.sample
+# .php-cs-fixer.dist.php
+# .user.ini
